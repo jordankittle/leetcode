@@ -9,7 +9,6 @@ export function addBinary(a: string, b: string): string {
     while(aEnd >= 0 || bEnd >= 0) {
         const bit1 = a[aEnd] || '0';
         const bit2 = b[bEnd] || '0';
-        console.log(bit1, bit2);
         answer.push(xOrWithCarry(bit1, bit2));
         aEnd--;
         bEnd--;
